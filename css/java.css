@@ -1,0 +1,38 @@
+.skill-slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .skill-slider {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    padding: 10px;
+  }
+
+  .skill-slider img {
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    width: 13%;
+    padding: 20px;
+    margin-right: 10px;
+
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Duplicate the slider content for infinite effect */
+  .skill-slider > * {
+    flex-shrink: 0;
+  }
+  .skill-slider-container:hover .skill-slider {
+    animation-play-state: paused;
+  }

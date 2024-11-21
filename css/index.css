@@ -1,0 +1,485 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-cont {
+  width: 100%;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.475);
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-row {
+  width: 100%;
+  display: flex;
+}
+
+.nav-col-1 {
+  width: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.logoimg {
+  width: 20%;
+}
+
+.nav-col-2 {
+  width: 100%;
+  /* border: 1px solid black; */
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hover-btn {
+  position: relative;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 20%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 60px;
+  margin-top: 15px;
+}
+
+.hover-btn:hover {
+  background-color: #45a049;
+}
+
+/* Options container style */
+.options {
+  display: none;
+  position: absolute;
+  top: 99%;
+  left: -30px;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Options items style */
+.options a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+/* Change color of options on hover */
+.options a:hover {
+  padding:20px;
+  background-color: #ffffff;
+  color: rgb(255, 114, 14);
+  border: 2px solid rgba(249, 159, 13, 0.807);
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+/* Show options when button is hovered */
+.hover-btn:hover .options {
+  display: block;
+}
+
+/* ---------------java------------- */
+/* ----------------------banner------------------- */
+
+.banners {
+  display: none;
+}
+
+.banners.active {
+  display: block;
+}
+
+.baner-btn1 {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  outline: none;
+  border: none;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(22, 104, 210, 0.219);
+}
+
+.baner-btn2 {
+  position: absolute;
+  top: 40%;
+  left: 95%;
+  outline: none;
+  border: none;
+  font-size: 60px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(22, 104, 210, 0.219);
+
+}
+
+.baner-btn1:hover {
+  width: 60px;
+  color: white;
+  background-color: rgba(22, 104, 210, 0.804);
+}
+
+.baner-btn2:hover {
+  width: 60px;
+  color: white;
+  background-color: rgba(22, 104, 210, 0.804);
+}
+
+/* -----about section---------- */
+.abt {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.abt-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 34px;
+  color: rgba(32, 56, 71, 0.984);
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.abt-head-hr {
+  width: 80%;
+  margin: auto;
+}
+
+.abt-row {
+  width: 92%;
+  display: flex;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.203);
+  border-radius: 10px;
+}
+
+.abt-col-1 {
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 20px;
+}
+
+.abt-col-2 {
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 20px;
+  display: block;
+}
+
+.abt-col-1 img {
+  width: 100%;
+}
+
+.abt-col-2-abt {
+  width: 100%;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #484646;
+  font-weight: 1000;
+}
+
+.abt-col-2-auth h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+
+}
+
+.abt-col-2-auth h1 {
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #484646;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.abt-col-2-auth h1 i {
+  font-size: 40px;
+}
+
+/* ---------------technical moduels------ */
+/* Button styling */
+.dropdown-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #2980b9;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Optional: to ensure proper positioning */
+.dropdown {
+  position: relative;
+}
+
+/* ----------------moduels--------- */
+.cont {
+  width: 100%;
+}
+
+.mod-row {
+  width: 100%;
+  display: block;
+  /* border: 1px solid yellow; */
+
+}
+
+.mod-row-head {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 38px;
+  text-transform: capitalize;
+  color: #131010;
+  margin-top: 20px;
+  margin-left: 40%;
+  position: relative;
+  display: inline-block;
+
+}
+
+.mod-row-head::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  /* Adjust the position below the text */
+  height: 2px;
+  /* Thickness of the line */
+  width: 100%;
+  /* Initially full width */
+  background: #007bff;
+  /* Line color */
+  animation: moveLine 2s infinite;
+  /* Animation */
+}
+
+@keyframes moveLine {
+  0% {
+    transform: scaleX(0);
+    /* Line starts small */
+    transform-origin: left;
+  }
+
+  50% {
+    transform: scaleX(1);
+    /* Line grows to full width */
+    transform-origin: left;
+  }
+
+  100% {
+    transform: scaleX(0);
+    /* Line shrinks back */
+    transform-origin: right;
+  }
+}
+
+.mod-col-f {
+  width: 90%;
+  margin: auto;
+  display: block;
+
+  /* border: 1px solid black; */
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.mod-col-f1 {
+  width: 100%;
+  /* border: 1px solid red; */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.678);
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.mod-col-f1-head {
+  display: flex;
+}
+
+.mod-col-f1-head button {
+  color: rgb(230, 184, 255);
+  background-color: #1954a6f1;
+  border: none;
+  outline: none;
+
+}
+
+.mod-col-f1-head button i {
+  font-size: 45px;
+  margin-right: 20px;
+}
+
+.mod-col-f1 i {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  font-size: 100px;
+
+}
+
+.mod-col-f1 h1 {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #1954a6f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.mod-col-f1-q {
+  display: block;
+  height: 180px;
+  overflow-y: auto;
+  width: 100%;
+  /* border: 1px solid rgba(0, 0, 255, 0.632); */
+  padding: 5px;
+  /* height: 240px; */
+}
+
+.mod-col-f1-q::-webkit-scrollbar {
+  width: 0;
+}
+
+.mod-col-f1-q span {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mod-col-f1-q span i {
+  font-size: 30px;
+  color: red;
+  padding: 5px;
+}
+
+.mod-col-f1-q span p {
+  width: 95%;
+  font-size: 22px;
+  color: #a06912d6;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.523);
+  overflow: hidden;
+}
+
+.mod-col-f1-q button {
+  width: 20%;
+  margin: auto;
+  text-transform: uppercase;
+  border: 1px solid maroon;
+  background-color: maroon;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.certi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certi img {
+  width: 80%;
+  border: px solid rgba(0, 0, 0, 0.146);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.632);
+  border: 30px;
+}
+
+.certi img:hover {
+  padding: 10px;
+  transition: 1s;
+}
+
+.copy {
+  margin-top: 10px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #254115;
+  color: rgb(255, 255, 255);
+}
+
+.copy h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
